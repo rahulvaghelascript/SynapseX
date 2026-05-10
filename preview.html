@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Submission - SynapseX</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      background: linear-gradient(135deg, #0f172a, #111827, #1e293b);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 700px;
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      padding: 45px;
+      text-align: center;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+      animation: fadeIn 1s ease;
+    }
+
+    h1 {
+      font-size: 2.3rem;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: #d1d5db;
+      margin-bottom: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      background: #3b82f6;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: 0.3s ease;
+      box-shadow: 0 5px 20px rgba(59, 130, 246, 0.35);
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      background: #2563eb;
+    }
+
+    .team {
+      margin-top: 30px;
+      font-size: 1rem;
+      color: #9ca3af;
+      letter-spacing: 1px;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .glow {
+      position: absolute;
+      width: 400px;
+      height: 400px;
+      background: rgba(59, 130, 246, 0.15);
+      border-radius: 50%;
+      filter: blur(80px);
+      z-index: -1;
+    }
+
+    .glow.one {
+      top: -100px;
+      left: -100px;
+    }
+
+    .glow.two {
+      bottom: -100px;
+      right: -100px;
+      background: rgba(168, 85, 247, 0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glow one"></div>
+  <div class="glow two"></div>
+
+  <div class="container">
+    <h1>Project Submission</h1>
+
+    <p>
+      Due to issues encountered while uploading the complete project files to GitHub,
+      we are sharing the full project through Google Drive instead.
+    </p>
+
+    <p>
+      The Drive contains all source code, project files, assets, database files,
+      and required resources related to the project.
+    </p>
+
+    <a
+      class="btn"
+      href="https://drive.google.com/file/d/1PFxCqDSqDbDl_uU8OmJLinvglIaTMwcf/view?usp=sharing"
+      target="_blank"
+    >
+      Open Google Drive
+    </a>
+
+    <div class="team">
+      — Team SynapseX
+    </div>
+  </div>
+
+  <script>
+    console.log("SynapseX Project Submission Page Loaded Successfully");
+  </script>
+
+</body>
+</html>
